@@ -36,4 +36,12 @@ public class InMemoryCache implements CacheInterface {
     public List<Entry> getAll() {
         return new ArrayList<Entry>(inMemoryMap.values());
     }
+    
+    @Override
+    public void remove(Long key) {
+    	checkArgument(key > 0, "key was %s but expected greater than zero value", key);
+    	if(inMemoryMap.containsKey(key)) {
+    		inMemoryMap.remove(key);
+    	}
+    }
 }
