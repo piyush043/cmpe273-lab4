@@ -72,7 +72,7 @@ public class DistributedCacheService implements CacheServiceInterface {
 
 		}
 
-		if (response.getCode() != 200) {
+		if (response.getCode() != 204) {
 			System.out.println("Response Code: " + response.getCode());
 			System.out.println("Failed to remove from the cahce.");
 		}
