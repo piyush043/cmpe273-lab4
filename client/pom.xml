@@ -6,7 +6,7 @@
 	<groupId>edu.sjsu.cmpe</groupId>
 	<artifactId>client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Consistent Hashed Client</name>
+	<name>CRDT Client</name>
 
 	<repositories>
 		<repository>
